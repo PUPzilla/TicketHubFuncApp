@@ -54,8 +54,7 @@ namespace TicketHubFuncApp
                         cmd.Parameters.AddWithValue("@SecurityCode", ticketPurchase.SecurityCode);
                         cmd.Parameters.AddWithValue("@Address", ticketPurchase.Address);
                         cmd.Parameters.AddWithValue("@City", ticketPurchase.City);
-                        cmd.Parameters.AddWithValue("@Provonce", ticketPurchase.Province);
-                        cmd.Parameters.AddWithValue("@City", ticketPurchase.City);
+                        cmd.Parameters.AddWithValue("@Province", ticketPurchase.Province);
                         cmd.Parameters.AddWithValue("@Country", ticketPurchase.Country);
 
                         await cmd.ExecuteNonQueryAsync();
